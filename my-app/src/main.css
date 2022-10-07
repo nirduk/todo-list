@@ -61,7 +61,8 @@ li {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
+  word-wrap: break-word;  
 }
 
 li > span {
