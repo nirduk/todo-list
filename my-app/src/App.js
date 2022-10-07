@@ -1,5 +1,6 @@
 import React from "react";
-import "./index.css";
+import "./main.css";
+import "./normalize.css";
 
 const App = () => {
   const todoData = JSON.parse(localStorage.getItem("todos"));
