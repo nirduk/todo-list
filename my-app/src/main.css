@@ -208,6 +208,10 @@ a:hover :nth-child(odd) {
     width: 90%;
   }
 
+  .wrapper {
+    width: 100%;
+  }
+
   form {
     width: 90%;
   }
