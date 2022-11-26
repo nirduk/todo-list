@@ -22,9 +22,9 @@ const TodoList = ({ todos, setTodos }) => {
     const updatedTodos = todos.map((todo) =>
       todo.id === item.id
         ? {
-            ...todo,
-            done: !todo.done
-          }
+          ...todo,
+          done: !todo.done
+        }
         : todo
     );
     setTodos(updatedTodos);
@@ -40,7 +40,9 @@ const TodoList = ({ todos, setTodos }) => {
         <li key={item.id}>
           <span
             onClick={() => handleToggleTodo(item)}
-            style={{ textDecoration: item.done ? "line-through" : "" }}
+            style={{
+              textDecoration: item.done ? "line-through 2px var(--red-dark)" : "",
+            }}
           >
             {item.text}
           </span>
@@ -100,12 +102,17 @@ const DeleteTodo = ({ item, setTodos }) => {
 
 const Footer = () => {
   return (
-    <p>
+    <div className="footer">
       by{" "}
       <a href="https://github.com/nirduk" target="_blank" rel="noreferrer">
-        kudrin
+        <span className="f1">K</span>
+        <span className="f2">u</span>
+        <span className="f3">d</span>
+        <span className="f4">r</span>
+        <span className="f5">i</span>
+        <span className="f6">n</span>
       </a>
-    </p>
+    </div>
   );
 };
 
