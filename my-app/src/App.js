@@ -37,15 +37,14 @@ const TodoList = ({ todos, setTodos }) => {
   return (
     <ul>
       {todos.map((item) => (
-        <li key={item.id}>
-          <span
+        <li key={item.id} >
+          <span className="li-text"
             onClick={() => handleToggleTodo(item)}
-            style={{
-              textDecoration: item.done ? "line-through 2px var(--red-dark)" : "",
-            }}
+            style={{textDecoration: item.done ? "line-through 2px var(--red-dark)" : ""}}
           >
             {item.text}
           </span>
+          <div className="line"></div>
           <DeleteTodo item={item} setTodos={setTodos} />
         </li>
       ))}
@@ -77,6 +76,7 @@ const AddTodo = ({ setTodos, todos }) => {
   return (
     <form onSubmit={handleAddTodo}>
       <input name="addTodo" ref={inputRef} placeholder="add new todo item" />
+      <div className="line-black"></div>
       <button type="submit">add new</button>
     </form>
   );
