@@ -77,14 +77,12 @@ input {
 
 input:focus {
   outline: none;
-  /* background-color: var(--grey-800); */
-  /* color: var(--grey-300); */
 }
 
 .line-black {
   display: inline-block;
   height: 30px;
-  width: 2px;
+  width: 1.5px;
   background-color: var(--grey-900);
   position: absolute;
   left: 340px;
@@ -153,7 +151,7 @@ li {
 .line {
   display: inline-block;
   height: calc(100% - 10px);
-  width: 2px;
+  width: 1px;
   background-color: var(--grey-300);
   position: absolute;
   left: 300px;
