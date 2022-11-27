@@ -67,7 +67,7 @@ form {
 
 input {
   width: 266px;
-  height: 20px;
+  height: 32px;
   background-color: var(--grey-300);
   border-radius: 0.375rem 0 0 0.375rem;
   border: solid 2px var(--grey-300);
@@ -81,7 +81,7 @@ input:focus {
 
 .line-black {
   display: inline-block;
-  height: 30px;
+  height: 42px;
   width: 1.5px;
   background-color: var(--grey-900);
   position: absolute;
@@ -92,7 +92,7 @@ input:focus {
 
 button {
   width: 70px;
-  height: 40px;
+  height: 52px;
   background-color: var(--grey-300);
   color: var(--grey-900);
   border: none;
@@ -142,6 +142,7 @@ li {
   cursor: pointer;
   border-radius: 0.375rem 0 0 0.375rem;
   transition: 0.2s ease-in-out all;
+  font-size: 14px;
 }
 
 .li-text:hover {
@@ -210,10 +211,12 @@ a:hover :nth-child(odd) {
 
   .wrapper {
     width: 100%;
+    max-width: 450px;
   }
 
   form {
-    width: 90%;
+    /* max-width: 450px; */
+    width: 82%;
   }
 
   .line-black {
@@ -222,10 +225,15 @@ a:hover :nth-child(odd) {
 
   input {
     width: 64%;
+    max-width: 300px;
   }
 
   button {
-    width: 24%;
+    width: 23%;
+  }
+
+  ul {
+    width: 90%;
   }
 
   li {
